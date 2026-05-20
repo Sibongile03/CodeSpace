@@ -1,0 +1,22 @@
+{
+  "name": "Flutter Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/flutter:1": {
+      "channel": "stable",
+      "installAndroidSdk": "true"
+    }
+  },
+  "postCreateCommand": "flutter doctor -v",
+  "forwardPorts": [
+    8080
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
